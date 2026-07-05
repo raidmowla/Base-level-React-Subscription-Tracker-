@@ -18,28 +18,6 @@ gym memberships, SaaS tools, etc.) and getting surprised by renewals.
 - Delete a subscription (also cancels its scheduled reminder)
 
 
-subscription-tracker/
-├── App.js                        # Navigation stack + providers, no screen logic
-├── app.json                      # Expo/Android config
-├── babel.config.js
-├── package.json
-└── src/
-    ├── screens/
-    │   ├── HomeScreen.js          # List, totals, delete, navigation to other screens
-    │   ├── SubscriptionFormScreen.js  #Add AND edit (shared form, real date picker)
-    │   ├── SettingsScreen.js      #Reminder lead time+currency
-    │   └── InsightsScreen.js     
-    ├── components/
-    │   ├── SubscriptionCard.js    # Single subscription row (tap to edit)
-    │   └── CategoryBarChart.js    #Lightweight bar chart (plain Views, no chart lib)
-    ├── context/
-    │   └── SettingsContext.js     #Shares settings across screens without prop drilling
-    ├── constants/
-    │   └── theme.js                #Colors + category list
-    └── utils/
-        ├── storage.js              # AsyncStorage load/save for subscriptions
-        ├── settings.js              # AsyncStorage load/save for app settings
-        └── notifications.js         # Schedule/cancel local reminders (configurable lead time)
 
 ## Install Node.js (LTS) and the expo CLI:
 npm install -g expo-cli
